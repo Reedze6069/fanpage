@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lil Peep Fan Page | CONTACT</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+
+  <header class="main-header">
+    <nav class="nav main-nav">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="blog.html">ARTICLE PAGE</a></li>
+        <li><a href="aboutus.html">ABOUT</a></li>
+        <li><a href="albums.html">ALBUMS</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+    <h1 class="band-name-band-name-large">Lil Peep Fan Page</h1>
+  </header>
+  <section class="content-section container">
+    <h2 class="section-header-contact">CONTACT US</h2>
+    <img class="about-centi-image" src="Images/Centi.png">
+
+    <div id="errors" class="card border-danger mb-3 d-none text-danger">
+      <div class="card-header">
+        <h4>Error text:</h4>
+      </div>
+      <div class="card-body text-danger">
+        <p id="errors-content" class="card-text"></p>
+      </div>
+    </div>
+
+    <form action="mailto:reedzeplay@yahoo.com" method="POST" class="contact-form" onsubmit="return validateForm();">
+
+      <div class="container">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+        <label for="lname">Surname</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+        <label for="country">Country</label>
+        <select id="country" name="country" required>
+          <option value="" disabled selected>Please select a country</option>
+          <option value="australia">Malta</option>
+          <option value="canada">Itlay</option>
+          <option value="usa">England</option>
+          <option value="usa">Germany</option>
+          <option value="usa">Poland</option>
+        </select>
+
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+
+
+
+  </section>
+
+
+  <footer class="main-footer">
+    <div class= "main-footer-container">
+      <h3 class= "band-name">Lil Peep Fan Page</h3>
+      <ul class="nav footer-nav">
+        <li>
+          <a href="https://www.youtube.com" target="_blank">
+            <img src="Images/YouTubezz.png">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.spotify.com" target="_blank">
+            <img src="Images/Spotify.png">
+          </a>
+        </li>
+        <li>
+
+          <a href="https://www.twitter" target="_blank">
+            <img src="Images/Twitter.png">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+</body>
+</html>
